@@ -1,4 +1,32 @@
 .row{
-    background-color: #a1b5cb;
+    background-color: #a1b5d2;
     padding: 20px;
+}
+
+.circulo{
+    display: flex;
+    justify-content: center;
+}
+
+.boton{
+    padding-inline: 5px;
+}
+
+.titulo{
+    display:contents
+}
+
+.addbutton{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.zonacirculos{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.skill{
+    margin-bottom: 10px;
+    margin-top: -5px;
 }

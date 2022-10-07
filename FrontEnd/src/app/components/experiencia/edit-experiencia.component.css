@@ -1,0 +1,19 @@
+.row{
+    padding: 10px;
+    background-color: #a1b5d2;
+    border-radius: 20px;
+    margin-top: 10px;
+}
+
+.form-group{
+    padding: 10px;
+}
+
+.boton{
+    margin: 10px;
+}
+
+.form-group{
+    text-shadow: white 0.1em 0.1em 0.2em;
+    font-size: large;
+}
