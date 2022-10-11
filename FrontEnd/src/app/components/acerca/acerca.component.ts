@@ -11,7 +11,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./acerca.component.css']
 })
 export class AcercaComponent implements OnInit {
-  persona: persona = new persona("", "", "");
+  persona: persona = null;
   acerca: Acerca[] = [];
 
 
@@ -20,7 +20,7 @@ export class AcercaComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => {this.persona = data});
+    this.cargarPersona();
     this.cargarAcerca();
     if(this.tokenService.getToken()){
       this.isLogged = true;
@@ -28,6 +28,16 @@ export class AcercaComponent implements OnInit {
       this.isLogged = false;
     }
   }
+
+  cargarPersona(){
+    this.personaService.detail(1).subscribe(
+      data =>{
+        this.persona = data;
+      }
+    )
+  }
+
+
 
   cargarAcerca(): void{
     this.acercaS.lista().subscribe(
@@ -41,9 +51,10 @@ export class AcercaComponent implements OnInit {
     if( id != undefined){
       this.acercaS.delete(id).subscribe(
         data => {
+          alert("Perfil Eliminado de Modo Satisfactorio");
           this.cargarAcerca();
         }, err => {
-          alert("No se pudo eliminar");
+          alert("Error al Eliminar el Perfil");
         }
       )
     }

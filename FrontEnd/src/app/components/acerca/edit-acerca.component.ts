@@ -32,9 +32,10 @@ export class EditAcercaComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.acercaS.update(id, this.acerca).subscribe(
       data => {
+        alert("Acerca de Mí Editado Satisfactoriamente");
         this.router.navigate(['']);
       }, err =>{
-        alert("Error al Modificar la Educacion");
+        alert("Error al Modificar Acerca de Mí");
         this.router.navigate([''])
       }
     )

@@ -36,9 +36,10 @@ export class HysComponent implements OnInit {
     if(id != undefined){
       this.skillS.delete(id).subscribe(
         data => {
+          alert("Skill Eliminada de Modo Satisfactorio");
           this.cargarSkills();
         }, err => {
-          alert("No Se Pudo Borrar La Skill");
+          alert("Error al Eliminar la Skill");
         }
       )
     }

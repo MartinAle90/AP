@@ -30,9 +30,10 @@ export class EditSkillComponent implements OnInit {
     const id = this.activatedRouter.snapshot.params['id'];
     this.skillS.update(id, this.skill).subscribe(
       data => {
+        alert("Skill Editada Satisfactoriamente");
         this.router.navigate(['']);
      }, err => {
-       alert("Error al Intentar Modificar la Skill");
+       alert("Error al Modificar la Skill");
         this.router.navigate(['']);
       }
     )

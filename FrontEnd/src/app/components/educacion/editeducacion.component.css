@@ -1,19 +1,15 @@
-.row{
-    padding: 10px;
-    background-color: #a1b5d2;
-    border-radius: 20px;
-    margin-top: 10px;
+.gradient-custom {
+    background: linear-gradient(to right, rgb(161, 181, 210), rgb(116, 144, 204));
+    }
+
+.card{
+    background-color:  rgb(188, 197, 209);
+    border-color: white;
 }
 
-.form-group{
-    padding: 10px;
-}
-
-.boton{
-    margin: 10px;
-}
-
-.form-group{
+.form-outline{
     text-shadow: white 0.1em 0.1em 0.2em;
     font-size: large;
+    
 }
+

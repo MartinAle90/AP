@@ -89,6 +89,6 @@ public class CEducacion {
         
         sEducacion.save(educacion);
         
-        return new ResponseEntity(new Mensaje("La Eduacion Fue Actualizada"), HttpStatus.OK);
+        return new ResponseEntity(new Mensaje("La Educacion Fue Actualizada"), HttpStatus.OK);
     }
 }

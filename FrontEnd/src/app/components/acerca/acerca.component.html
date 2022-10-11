@@ -1,25 +1,47 @@
-<div class="row">
+<div class="row" *ngIf="persona">
 
 
     <div class="col-xs-12 cal-sm-3 col-md-3 col-lg-3">
         <div>
             <div>
-                <img src="../../../assets/img-perfil.jpg" class="img-fluid" id="fotodeperfil">
+                <img src='{{persona.img}}' class="img-fluid" id="fotodeperfil">
+
             </div>
 
-            <div class="nombreytitulo">
-                <div>
-                    <p>{{persona.nombre}} {{persona.apellido}}</p>
+            <div class="nombretituloboton">
+                <div class="nombreytitulo">
+                    <div>
+                        <p>{{persona.nombre}} {{persona.apellido}}</p>
+                    </div>
+
+                    <div>
+                        <p>{{persona.descripcion}}</p>
+                    </div>
+
+                    <!-- 
+
+                    <div *ngFor="let Acerca of acerca">
+                        <p class="titulacionA">{{Acerca.titulacionA}}</p>
+                    </div>
+
+                   -->
+
                 </div>
 
-                <div *ngFor="let Acerca of acerca">
-                    <p class="titulacionA">{{Acerca.titulacionA}}</p>
-                </div>
+                <button class="editbutton1 btn btn-outline-primary " routerLink="/editperfil/1" *ngIf="isLogged">
+                    <i class="bi bi-pencil"></i>
+                </button>
+
+
             </div>
+
+
 
 
 
         </div>
+
+
 
     </div>
 
@@ -30,12 +52,12 @@
         <div class="titulo">
             <h1>Acerca de mí</h1>
             <div *ngFor="let Acerca of acerca">
-                    <div class="editbutton col-lg-1" *ngIf="isLogged">
-                        <button class="btn btn-outline-primary" routerLink="/editacerca/{{Acerca.id}}">
-                            <i class="bi bi-pencil"></i> 
-                        </button>
-                    </div>
-    
+                <div class="editbutton2 col-lg-1" *ngIf="isLogged">
+                    <button class="btn btn-outline-primary" routerLink="/editacerca/{{Acerca.id}}">
+                        <i class="bi bi-pencil"></i>
+                    </button>
+                </div>
+
             </div>
         </div>
 
@@ -47,9 +69,9 @@
                         <td>{{Acerca.descripcionA}}</td>
 
                     </div>
-        
+
                 </tr>
-        
+
             </tbody>
 
         </div>

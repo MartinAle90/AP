@@ -21,10 +21,10 @@ export class NewEducacionComponent implements OnInit {
     const educacion = new Educacion(this.nombreE, this.descripcionE);
     this.educacionS.save(educacion).subscribe(
       data =>{
-        alert("La Eduacion Fue Añadida Correctamente");
+        alert("Eduacion Añadida Correctamente");
         this.router.navigate(['']);
       }, err =>{
-        alert("Fallo");
+        alert("Fallo al Agregar una Nueva Educación");
         this.router.navigate(['']);
       }
     )

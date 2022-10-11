@@ -12,6 +12,7 @@ import { EditSkillComponent } from './components/hys/edit-skill.component';
 import { EditAcercaComponent } from './components/acerca/edit-acerca.component';
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EditPerfilComponent } from './components/acerca/edit-perfil.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -24,6 +25,7 @@ const routes: Routes = [
   {path: 'editskill/:id', component: EditSkillComponent},
   {path: 'newacerca', component: NewAcercaComponent},
   {path: 'editacerca/:id', component: EditAcercaComponent},
+  {path: 'editperfil/:id', component: EditPerfilComponent},
   {path: 'newproyecto', component: NewProyectoComponent},
   {path: 'editproyecto/:id', component: EditProyectoComponent},
 ];

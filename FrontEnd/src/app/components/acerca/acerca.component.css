@@ -1,5 +1,6 @@
 .row{
     padding: 0px;
+    grid-row: auto ;
 }
 
 div{
@@ -34,7 +35,8 @@ div{
 /*etiqueta nombre*/
 .nombreytitulo{
     font-weight: bold;
-    transform: translate(0%,-140%);
+    transform: translate(0%,0%);
+    margin-top: -45px;
 
 }
 
@@ -46,8 +48,23 @@ div{
     flex-wrap: wrap;
 }
 
-.editbutton{
+.nombretituloboton{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translate(0%,-80%);
+
+}
+
+.editbutton1{
+    margin-top: -50px;
+    margin-left: 10px;
+
+}
+
+.editbutton2{
     display: inline-block;
+
 }
 
 .titulo{

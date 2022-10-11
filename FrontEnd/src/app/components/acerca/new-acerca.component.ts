@@ -21,10 +21,10 @@ export class NewAcercaComponent implements OnInit {
     const acerca = new Acerca(this.titulacionA, this.descripcionA);
     this.acercaS.save(acerca).subscribe(
       data =>{
-        alert("El Acerca de Mí Fue Añadido Correctamente");
+        alert("Acerca de Mí Añadido Correctamente");
         this.router.navigate(['']);
       }, err =>{
-        alert("Fallo");
+        alert("Fallo al Agregar un Nuevo Acerca de Mí");
         this.router.navigate(['']);
       }
     )

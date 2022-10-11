@@ -35,9 +35,10 @@ export class ProyectoComponent implements OnInit {
     if( id != undefined){
       this.proyectoS.delete(id).subscribe(
         data => {
+          alert("Proyecto Eliminado de Modo Satisfactorio");
           this.cargarProyecto();
         }, err => {
-          alert("No se pudo eliminar");
+          alert("Error al Eliminar el Proyecto");
         }
       )
     }

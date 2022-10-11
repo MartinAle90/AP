@@ -28,6 +28,10 @@ import { EditAcercaComponent } from './components/acerca/edit-acerca.component';
 import { NewAcercaComponent } from './components/acerca/new-acerca.component';
 import { EditProyectoComponent } from './components/proyecto/edit-proyecto.component';
 import { NewProyectoComponent } from './components/proyecto/new-proyecto.component';
+import { EditPerfilComponent } from './components/acerca/edit-perfil.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideStorage,getStorage } from '@angular/fire/storage';
 
 
 @NgModule({
@@ -54,6 +58,7 @@ import { NewProyectoComponent } from './components/proyecto/new-proyecto.compone
     NewAcercaComponent,
     EditProyectoComponent,
     NewProyectoComponent,
+    EditPerfilComponent,
   ],
 
   imports: [
@@ -62,6 +67,8 @@ import { NewProyectoComponent } from './components/proyecto/new-proyecto.compone
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideStorage(() => getStorage()),
     ],
   providers: [
     interceptorProvider
