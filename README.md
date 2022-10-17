@@ -1,13 +1,18 @@
 <div>
     <table>
-        <h1>
-            # PROYECTO FINAL DE ARGENTINA PROGRAMA
-        </h1>
-    
+        <tr>
+            <h1>
+                # PROYECTO FINAL DE ARGENTINA PROGRAMA
+            </h1>
+        </tr>
+
+    <tr>
         <h2>
     
             # EDICIÓN 2021/2022 | MÓDULO "YO PROGRAMO"
         </h2>
+    </tr>
+
     
         <h3>
             # by MARTIN ALEJANDRO DAZA.
