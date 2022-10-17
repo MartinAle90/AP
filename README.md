@@ -1,6 +1,4 @@
 <html>
-  <body>
-    
     <div>
       <h1>
         # PROYECTO FINAL DE ARGENTINA PROGRAMA
@@ -36,6 +34,4 @@
         # PASSWORD: admin
       </h3>
     </div>
-    
-  </body>
 </html>
