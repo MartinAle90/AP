@@ -1,4 +1,4 @@
-<div>
+
     <table>
         <tr>
             <h1>
@@ -30,7 +30,3 @@
             # PASSWORD: admin
         </h3>
     </table>
-
-
-
-</div>
