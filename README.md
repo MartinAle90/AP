@@ -4,7 +4,6 @@
     </h1>
 
     <h2>
-
         # EDICIÓN 2021/2022 | MÓDULO "YO PROGRAMO"
     </h2>
 
