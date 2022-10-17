@@ -26,7 +26,7 @@
     </div>
     <div>
       <h3>
-        # PASSWORD: admin
+        # CONTRASEÑA: admin
       </h3>
     </div>
     <div>
