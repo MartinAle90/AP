@@ -32,6 +32,9 @@ import { EditPerfilComponent } from './components/acerca/edit-perfil.component';
 import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import {MatCardModule} from '@angular/material/card';
+
+
 
 
 @NgModule({
@@ -67,6 +70,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     NgCircleProgressModule.forRoot({}),
     HttpClientModule,
     FormsModule,
+    MatCardModule,
+
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideStorage(() => getStorage()),
     ],

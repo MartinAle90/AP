@@ -1,6 +1,9 @@
 .container{
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 32px 0;
+    background: #00358e;
 }
 
 .redes{
